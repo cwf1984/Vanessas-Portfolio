@@ -1,3 +1,6 @@
+body {
+    background-color: #FFFFF0;
+}
 
 
 .header {
@@ -5,7 +8,8 @@
     padding: 30px 0 20px 0;
     justify-content: space-between;
     background-color: firebrick;
-    color: white;
+    color: floralwhite;
+    margin-bottom: 5px;
 }
 
 .header h1 {
@@ -26,5 +30,41 @@
     text-decoration: none;
     color: white;
     flex: 0 1 auto;
+}
+
+.headerimage {
+    clear: both;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 85%;
+    margin-right: 20px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work {
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 5px;
+
+}
+
+.work header {
+    color: #FFFACD;
+    background-color: #800000;
+}
+
+.work img {
+    border-color: #800000;
+    border-style: solid;
+    border-width: 2px;
     
 }
+
