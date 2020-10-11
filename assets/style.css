@@ -1,7 +1,7 @@
 body {
     background-color: #FFFFF0;
+    margin: 0;
 }
-
 
 .header {
     display: flex;
@@ -43,55 +43,52 @@ main {
     width: 85%;
     margin-right: 20px;
     float: right;
+}
+
+.about-me {
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 95%;
+}
+
+
+.projects {
+    clear: both;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 5ps 10px 5px;
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.work {
-    flex: 2;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 5px;
-    position: relative;
-
-}
-
-.text-box header {
-    color: #FFFACD;
-    background-color: #800000;
     width: 100%;
 }
 
 .text-box {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: #800000;
-    color: #FFFACD;
-    padding-left: 20px;
-    padding-right:20px;
-}
-
-.project {
-    position: relative;
-    margin: 5px;
-    text-align: center;
-}
-
-/*.text-block {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    left: 50px;
     background-color: black;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-} */
+    padding: 10px;
+}
 
-.work img {
+.projects img {
     border-color: #800000;
     border-style: solid;
-    border-width: 2px;
-    
+    border-width: 3.5px;
+    margin: 5px;
+    flex: 1 0 auto;
 }
+
+aside { 
+    display: inline-block;
+    border-right: 1px solid rgb(41, 40, 40);
+
+}
+
+
+
 
