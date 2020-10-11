@@ -58,11 +58,8 @@ main {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 10px 5ps 10px 5px;
     flex: 2;
-    background-color: #fff;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
 }
 
