@@ -78,6 +78,7 @@ main {
     flex: 1 0 auto;
     box-shadow: 1px 1px 1px 1px rgb(54, 14, 14);
     margin: 6px;
+    align-items: center;
 }
 
 .projects > section {
@@ -90,10 +91,11 @@ aside {
 
 }
 
-@media screen and (max-width: 200px) {
-    .projects img {
+@media screen and (max-width: 320px) {
+    .projects img, .about-me {
         flex-direction: column;
-        max-width: 100%;
+        max-width: 100vw;
+        height: auto;
     }
 
 }
