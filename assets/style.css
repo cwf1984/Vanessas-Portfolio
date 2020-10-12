@@ -57,10 +57,9 @@ main {
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 10px 5ps 10px 5px;
-    flex: 2;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 92%;
 }
 
 .text-box {
@@ -76,8 +75,13 @@ main {
     border-color: #800000;
     border-style: solid;
     border-width: 3.5px;
-    margin: 5px;
     flex: 1 0 auto;
+    box-shadow: 1px 1px 1px 1px rgb(54, 14, 14);
+    margin: 6px;
+}
+
+.projects > section {
+    flex: 0 50%;
 }
 
 aside { 
@@ -86,6 +90,11 @@ aside {
 
 }
 
+@media screen and (max-width: 200px) {
+    .projects img {
+        flex-direction: column;
+        max-width: 100%;
+    }
 
-
+}
 
