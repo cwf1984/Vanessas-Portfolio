@@ -40,17 +40,87 @@ body {
 }
 
 main {
-    width: 85%;
+    width: 95%;
     margin-right: 20px;
     float: right;
 }
 
 .about-me {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-right: 20px;
     margin-bottom: 10px;
-    text-align: justify;
-    width: 95%;
 }
 
+.about-me-aside {
+    flex: 1 0 10%;
+    font-size: 35px;
+}
+
+.about-me-text {
+    flex: 1 0 90%;
+    text-align: justify;
+}
+
+.work {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.work-aside {
+    flex: 1 0 10%;
+    font-size: 35px;
+}
+
+.row-1 { 
+    flex: 1 0 100%;
+    border-color: #800000;
+    border-style: solid;
+    border-width: 3.5px;
+    box-shadow: 1px 1px 1px 1px rgb(54, 14, 14);
+    opacity: 0.7;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.row-2 {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* margin-right: 20px;
+    margin-left: 80px; */
+}
+
+.row-2-img {
+    flex: 1 0 45%;
+    border-color: #800000;
+    border-style: solid;
+    border-width: 3.5px;
+    box-shadow: 1px 1px 1px 1px rgb(54, 14, 14);
+    /* margin: 6px;
+    align-items: center;
+    width: 80%;
+    height: 400px; */
+    opacity: 0.7;
+    position: relative;
+}
+
+
+.text-box {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*
 
 .projects {
     clear: both;
@@ -61,16 +131,6 @@ main {
     flex-wrap: wrap;
     width: 92%;
 }
-
-.text-box {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
 .projects img {
     border-color: #800000;
     border-style: solid;
@@ -79,8 +139,17 @@ main {
     box-shadow: 1px 1px 1px 1px rgb(54, 14, 14);
     margin: 6px;
     align-items: center;
+    width: 200px;
+    height: 400px;
+    opacity: 0.7;
 }
 
+.project img:hover {
+    opacity: 1;
+
+}
+
+  
 .projects > section {
     flex: 0 50%;
 }
@@ -93,14 +162,8 @@ aside {
 
 @media screen and (max-width: 320px) {
     .projects img, .about-me {
-        flex-direction: column;
-        max-width: 100vw;
+        max-width: auto;
         height: auto;
-        margin-right: 10px;
-    }
-
-    .about-me {
-        max-width: 100%;
         margin-right: 10px;
     }
 
