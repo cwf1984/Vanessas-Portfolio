@@ -40,12 +40,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* main {
+main {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-} */
+    flex-direction: column;
+} 
 
 .about-me {
     min-width: 1024px;
@@ -68,7 +66,7 @@ body {
 .about-me p {
     order: 2;
     flex: 1 0 90%;
-    disply: inline-block;
+    display: inline-block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14pt;
     padding: 10px;
@@ -76,10 +74,10 @@ body {
     background-color: cornsilk;
 }
 
-/* main {
+ main {
     display: flex;
     flex-wrap: wrap;
-} */
+}
 
 .work {
     min-width: 1024px;
@@ -87,13 +85,12 @@ body {
     height: 100%;
     margin: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .work aside {
-    order: 1;
-    flex: 1 0 10%;
+    flex: 1 0;
     display: inline-block;
     border-right: 5px solid black;
     padding: 0;
@@ -104,13 +101,16 @@ body {
 .images {
     width: 90%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    column-fill: auto;
+
 }
 
+
 .image1 {
-    order: 2;
-    flex: 1 0 87.8%;
+    flex: 1 0;
     display: inline-block;
     margin-right: 20px;
     border-color: #800000;
@@ -122,7 +122,41 @@ body {
 }
 
 .image1:hover {
-opacity: 0.7;
+    opacity: 0.7;
+
+}
+
+.image2 {
+    order: 2;
+    flex: 1 0 87.8%;
+    display: inline-block;
+    margin-right: 20px;
+    border-color: #800000;
+    border-style: solid;
+    border-width: 3.5px;
+    margin-left: 20px;
+    opacity: 1;
+
+}
+
+.image2:hover {
+    opacity: 0.7;
+}
+
+.image3 {
+    order: 2;
+    flex: 1 0 87.8%;
+    display: inline-block;
+    margin-right: 20px;
+    border-color: #800000;
+    border-style: solid;
+    border-width: 3.5px;
+    margin-left: 20px;
+    opacity: 1;
+}
+
+.image3:hover {
+    opacity: 0.7;
 }
 
 
@@ -133,17 +167,14 @@ opacity: 0.7;
     margin-right: 20px;
     margin-bottom: 20px;
 } 
-
 .about-me-aside {
     flex: 1 0 10%;
     font-size: 35px;
 }
-
 .about-me-text {
     flex: 1 0 90%;
     text-align: justify;
 }
-
 .work {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -151,13 +182,11 @@ opacity: 0.7;
     margin-right: 20px;
     flex-wrap: wrap;
 }
-
 .work-aside {
     flex: 1 0 10%;
     font-size: 35px;
   
 }
-
 .row-1 { 
     flex: 1 0;
     border-color: #800000;
@@ -169,8 +198,6 @@ opacity: 0.7;
     margin-bottom: 20px;
   
 }
-
-
 .text-box {
     position: absolute;
     bottom: 50px;
@@ -180,7 +207,6 @@ opacity: 0.7;
     padding: 10px;
     font-size: 20px;
 }
-
  .row-2 {
     display: flex;
     flex-wrap: wrap;
@@ -194,21 +220,17 @@ opacity: 0.7;
     border-width: 3.5px;
     box-shadow: 1px 1px 1px 1px rgb(54, 14, 14);
 }
-
 .row-2-img {
     flex: 1 0;
-
     opacity: 0.7;
     position: relative;
     object-fit: contain;
     margin: 20px;
-
 }
 */
 
 
 /*
-
 .projects {
     clear: both;
     position: relative;
@@ -230,30 +252,22 @@ opacity: 0.7;
     height: 400px;
     opacity: 0.7;
 }
-
 .project img:hover {
     opacity: 1;
-
 }
-
   
 .projects > section {
     flex: 0 50%;
 }
-
 aside { 
     display: inline-block;
     border-right: 1px solid rgb(41, 40, 40);
-
 }
-
 @media screen and (max-width: 320px) {
     .projects img, .about-me {
         max-width: auto;
         height: auto;
         margin-right: 10px;
     }
-
 }
-
 */ 
