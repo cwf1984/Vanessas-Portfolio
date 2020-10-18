@@ -26,13 +26,12 @@ Or use the URL listed below to view the live webpage.
 
 Below is an image of the issues I was having trying to incorporate a textbox onto the images:
 
-![Text Box Trouble](./images/Text_Box_Trouble.png "Text Box Trouble")
+![Text_Box_Trouble](./images/Text_Box_Trouble.png "Text_Box_Trouble")
 
 
 ## Credits
 
-Thank you to Bootcamp Spot, the University of Washington and Trilogy Education for the guidelines given to create this project. It provided a great deal of practice and also showed me what I still need to keep working on.
-
+Thank you to Bootcamp Spot, the University of Washington and Trilogy Education for the guidelines given to create this project. It provided a great deal of practice and also showed me what I need to keep working on.
 ## License
 
 MIT License
