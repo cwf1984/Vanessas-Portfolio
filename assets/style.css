@@ -25,6 +25,7 @@ body {
     padding: 10px;
 }
 
+/*links sit side by side*/
 .nav li {
    display: inline;
    margin-right: 15px;
@@ -33,6 +34,7 @@ body {
    
 }
 
+/*links are white and have no underline*/
 .nav a {
     text-decoration: none;
     color: white;
@@ -46,6 +48,7 @@ body {
     margin-bottom: 20px;
 }
 
+/*This section includes About Me and Work*/
 main {
     display: flex;
     flex-direction: column;
@@ -93,7 +96,7 @@ main {
     margin: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     
 
@@ -106,7 +109,7 @@ main {
     border-right: 5px solid firebrick;
     padding: 20px;
     font-size: 24pt;
-    margin-left: 8px;
+    margin: 0 10px 0 30px;
     text-align: right;
     background-color: cornsilk;
     width: 15vw;
@@ -120,16 +123,17 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 45px 0 30px;
+    padding: 10px;
     order: 2;
     float: right;
 }
 
 
-
+/*position is set to relative for the text box on the image that I am still working on*/
 .image1 {
     flex: 4 1;
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
     border-color: #800000;
     border-style: solid;
     border-width: 3.5px;
@@ -162,7 +166,7 @@ position: relative;
 
 }
 
-/*This is the coding I used for the text box on the image and was unable to get the box to sit on top of the image
+/*This is the coding I used for the text box on the image and was unable to get the box to sit on top of the image*/
 /* .text-box {
 position: absolute;
 background-color: firebrick;
@@ -172,7 +176,7 @@ font-size: 20px;
 display: block;
 left: 20px;
 bottom: 20px;
-} */
+}  */
 
 .image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover  {
     opacity: 0.7;
@@ -211,5 +215,14 @@ footer a {
     text-decoration: none;
     color: white;
     flex: 0 1 auto;
+}
+
+@media screen and (max-width: 320px) {
+    .images {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
 }
 

@@ -26,6 +26,8 @@ Or use the URL listed below to view the live webpage.
 
 Below is an image of the issues I was having trying to incorporate a textbox onto the images:
 
+![Text Box Trouble](./images/Text_Box_Trouble.png "Text Box Trouble")
+
 
 ## Credits
 
