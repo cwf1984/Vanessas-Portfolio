@@ -8,9 +8,11 @@ body {
     display: flex;
     padding: 30px 0 20px 0;
     justify-content: space-between;
+    align-items: center;
     background-color: firebrick;
     color: floralwhite;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 .header h1 {
@@ -18,12 +20,15 @@ body {
     flex: 0 1 auto;
     font-size: 28pt;
     margin-left: 15px;
+    width: auto;
+    padding: 10px;
 }
 
 .nav li {
    display: inline;
    margin-right: 15px;
    font-size: 18pt;
+   width: auto;
    
 }
 
@@ -39,15 +44,14 @@ body {
     width: 100%;
     margin-bottom: 20px;
 }
-
+/* 
 main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 88%;
+    width: 100%;
     color: #4b4e52;
-    ;
-} 
+}  */
 
 .about-me {
     min-width: 1024px;
@@ -87,48 +91,67 @@ main {
     min-height: 200px;
     margin: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content: center;
+    align-items: flex-start;
+    
 
 }
 
 .work aside {
     order: 1;
-    flex: 1 0 15%;
-    display: inline-block;
+    flex: 0 1;
+    display: block;
     border-right: 5px solid firebrick;
     padding: 20px;
     font-size: 24pt;
-    margin-left: 15px;
+    margin-left: 8px;
     text-align: right;
     background-color: cornsilk;
+    width: 15vw;
+    float: left;
 }
+
 
 .images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-fill: auto;
     padding: 0 45px 0 30px;
-    flex: 1 0 80%;
     order: 2;
+    /* width: 85vw; */
+    float: right;
 }
 
-.image1, .image2, .image3, .image4 {
-flex: 1 0 100%;
+
+
+.image1 {
+    flex: 4 1 100%;
+    margin: 20px;
+    border-color: #800000;
+    border-style: solid;
+    border-width: 3.5px;
+    margin: 20px;
+    opacity: 1;
+    height: 400px;
+    max-width: 85vw;
+    box-shadow: 1px 1px 1px 1px rgb(92, 82, 82);
+    background-color: cornsilk;
+    padding: 8px;
+ 
+}
+
+.image2, .image3, .image4, .image5 {
+flex: 1 1;
 margin-right: 20px;
-display: inline;
 border-color: #800000;
 border-style: solid;
 border-width: 3.5px;
 margin: 20px;
 opacity: 1;
-max-width: 100%;
-max-height: 100%;
 height: 400px;
-width: 100vw;
+max-width: 43vw;
 box-shadow: 1px 1px 1px 1px rgb(92, 82, 82);
 background-color: cornsilk;
 padding: 8px;
@@ -151,26 +174,6 @@ bottom: 20px;
     opacity: 0.7;
     border-color: #eb482c;
 
-}
-
-.image5 {
-    flex: 1 0;
-    display: inline-block;
-    margin: 20px;
-    border-color: #800000;
-    border-style: solid;
-    border-width: 3.5px;
-    margin: 20px;
-    opacity: 1;
-    max-width: 100vw;
-    max-height: 100%;
-    height: 400px;
-    width: 100vw;
-    box-shadow: 1px 1px 1px 1px rgb(92, 82, 82);
-    background-color: cornsilk;
-    padding: 8px;
-    object-fit: cover;
- 
 }
 
 footer {
@@ -205,3 +208,4 @@ footer a {
     color: white;
     flex: 0 1 auto;
 }
+

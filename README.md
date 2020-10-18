@@ -26,7 +26,6 @@ Or use the URL listed below to view the live webpage.
 
 Below is an image of the issues I was having trying to incorporate a textbox onto the images:
 
-![Text Box Issues](./assets/Screenshot(8).png "Textbox Issues")
 
 ## Credits
 
